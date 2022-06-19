@@ -1,0 +1,6 @@
+syntax = "proto3";
+package kite.v1.discord;
+
+message Guild {
+  fixed64 id = 1;
+}

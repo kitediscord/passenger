@@ -1,0 +1,27 @@
+{
+  "name": "kite-guest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "assembly/index.ts",
+  "types": "assembly/index.ts",
+  "ascMain": "assembly/index.ts",
+  "scripts": {
+    "build:debug": "asc assembly/index.ts --target debug",
+    "build:release": "asc assembly/index.ts --target release",
+    "build": "npm run build:debug && npm run build:release",
+    "generate": "node generate.js"
+  },
+  "author": "Merlin Fuchs <contact@merlin.gg",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "as-proto-gen": "^0.2.4",
+    "assemblyscript": "^0.20.11"
+  },
+  "type": "module",
+  "files": [
+    "assembly"
+  ],
+  "dependencies": {
+    "as-proto": "^0.2.4"
+  }
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package kite.v1.actions;
+
+message Action {
+  fixed64 id = 1;
+}
+
+message ActionResponse {
+  fixed64 id = 1;
+}
