@@ -10,7 +10,7 @@ WASM APIs.
 Currently, libraries are available for the following languages:
 
 - Rust
-- AssemblyScript
+- AssemblyScript (WIP)
 
 ## Usage
 
