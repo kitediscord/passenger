@@ -8,8 +8,6 @@ plugins:
 
   - name: prost
     out: rust/src/proto
-  - name: tonic
-    out: rust/src/proto
   - name: prost-crate
     out: rust
     strategy: all

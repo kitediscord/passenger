@@ -1,5 +1,5 @@
 syntax = "proto3";
-package kite.v1.actions;
+package kite.actions.v1;
 
 message Action {
   fixed64 id = 1;

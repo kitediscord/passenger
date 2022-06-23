@@ -1,23 +1,35 @@
 // @generated
 pub mod kite {
-    pub mod v1 {
-        #[cfg(feature = "kite_v1_actions")]
-        // @@protoc_insertion_point(attribute:kite.v1.actions)
-        pub mod actions {
-            include!("kite.v1.actions.rs");
-            // @@protoc_insertion_point(kite.v1.actions)
+    pub mod actions {
+        #[cfg(feature = "kite_actions_v1")]
+        // @@protoc_insertion_point(attribute:kite.actions.v1)
+        pub mod v1 {
+            include!("kite.actions.v1.rs");
+            // @@protoc_insertion_point(kite.actions.v1)
         }
-        #[cfg(feature = "kite_v1_discord")]
-        // @@protoc_insertion_point(attribute:kite.v1.discord)
-        pub mod discord {
-            include!("kite.v1.discord.rs");
-            // @@protoc_insertion_point(kite.v1.discord)
+    }
+    pub mod deployments {
+        #[cfg(feature = "kite_deployments_v1")]
+        // @@protoc_insertion_point(attribute:kite.deployments.v1)
+        pub mod v1 {
+            include!("kite.deployments.v1.rs");
+            // @@protoc_insertion_point(kite.deployments.v1)
         }
-        #[cfg(feature = "kite_v1_events")]
-        // @@protoc_insertion_point(attribute:kite.v1.events)
-        pub mod events {
-            include!("kite.v1.events.rs");
-            // @@protoc_insertion_point(kite.v1.events)
+    }
+    pub mod discord {
+        #[cfg(feature = "kite_discord_v1")]
+        // @@protoc_insertion_point(attribute:kite.discord.v1)
+        pub mod v1 {
+            include!("kite.discord.v1.rs");
+            // @@protoc_insertion_point(kite.discord.v1)
+        }
+    }
+    pub mod events {
+        #[cfg(feature = "kite_events_v1")]
+        // @@protoc_insertion_point(attribute:kite.events.v1)
+        pub mod v1 {
+            include!("kite.events.v1.rs");
+            // @@protoc_insertion_point(kite.events.v1)
         }
     }
 }

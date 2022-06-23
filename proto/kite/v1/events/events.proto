@@ -1,6 +1,0 @@
-syntax = "proto3";
-package kite.v1.events;
-
-message Event {
-  fixed64 id = 1;
-}

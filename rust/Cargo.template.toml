@@ -6,7 +6,6 @@ description = "Protocol definitions for communication between Kite services"
 
 [dependencies]
 prost = "0.10.4"
-tonic = "0.7.2"
 wee_alloc = "0.4.5"
 
 [features]

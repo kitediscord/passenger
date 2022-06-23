@@ -1,0 +1,20 @@
+syntax = "proto3";
+package kite.events.v1;
+
+import "kite/deployments/v1/settings.proto";
+
+message Event {
+  EventGroup group = 1;
+  oneof event {
+    InitEvent init = 2;
+  }
+}
+
+message InitEvent {
+  kite.deployments.v1.DeploymentSettings settings = 1;
+}
+
+enum EventGroup {
+  EVENT_GROUP_UNSPECIFIED = 0;
+  EVENT_GROUP_INIT = 1;
+}

@@ -49,8 +49,6 @@ npm install -g as-proto-gen
 
 cargo install protoc-gen-prost
 
-cargo install protoc-gen-tonic
-
 cargo install protoc-gen-prost-crate
 ```
 
